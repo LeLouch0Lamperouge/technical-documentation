@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Technical Documentation </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   </head>
+<body>
+
+    <div class="sidebar close" id="sidebar">
+        <div class="logo-details">
+            <i class='bx bxl-c-plus-plus'></i>
+            <span class="logo_name">CodingLab</span>
+        </div>
+        <ul class="nav-links">
+        <li>
+            <a href="#introduction">
+                <i class='bx bx-grid-alt' ></i>
+                <span class="link_name">Introduction</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="#introduction">Introduction</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#syntax">
+                <i class='bx bx-collection' ></i>
+                <span class="link_name">Syntax</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="#syntax">Syntax</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#data-types">
+                <i class='bx bx-book-alt' ></i>
+                <span class="link_name">Data Types</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="#data-types">Data Types</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#variables">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="link_name">Variables</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="#variables">Variables</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#type-casting">
+            <i class='bx bx-line-chart' ></i>
+            <span class="link_name">Type Casting</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="#type-casting">Type Casting</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#user-input">
+                <i class='bx bx-plug' ></i>
+                <span class="link_name">User Input</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="#user-input">User Input</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#booleans">
+            <i class='bx bx-compass' ></i>
+            <span class="link_name">Booleans</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="#booleans">Booleans</a></li>
+            </ul>
+        </li>
+
+        </ul>
+    </div>
+
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu' id="menuOpen"></i>
+            <i class='bx bx-menu' id="menuClose" style="display: none;"></i>
+            <span class="text">C# Tutorial</span>
+        </div>
+        <div class="main-title" id="introduction">
+            <h2 class="sub-title">Introduction</h2>
+            <span class="txt">
+                C# is a programming language developed by Microsoft.
+            </span>
+            <span class="txt">
+                C# is used in many fields , Some of them are:-
+            </span>
+            <ol class="oreder">
+                <li>Desktop App Development</li>
+                <li>Mobile App Development</li>
+                <li>Game Development</li>
+                <li>Backend Web Development</li>
+            </ol>
+            <span class="txt">
+                C# is one of the most popular programming languages , Because:-
+            </span>
+            <ul class="unoreder">
+                <li>It is a programming language developed by Microsoft</li>
+                <li>It is a high-level programming language which is easy to learn</li>
+                <li>It is more secure than many programming languages</li>
+                <li>It is close to C , C++ and Java ... It is easy for programmers to switch to C# or vice versa</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="home-section" id="syntax">
+        <div class="main-title">
+            <h2 class="sub-title">Syntax</h2>
+        </div>
+        <span class="txt">
+            Syntax is the structure of statements , Here is a simple program typed in C# to discuss the meaning of syntax
+        </span>
+        <pre class="codeing">
+            <code>
+    using System;
+    namespace Hello
+    {
+        class MyProgram
+        {
+            static void Main(string[] args)
+            {
+                /* That is my first program
+                I created it today*/
+                // Printing text to console and filling the rest of that line
+                Console.WriteLine("Hello World!");
+                // Printing text to console without filling the rest of that line
+                Console.Write("Hello ");
+                Console.WriteLine("Ahmed");
+            }
+        }
+    }
+            </code>
+        </pre>
+    </section>
+
+    <section class="home-section" id="data-types">
+        <div class="main-title">
+            <h2 class="sub-title">Data Types</h2>
+        </div>
+        <span class="txt">
+            Some data types that are supported by C# :-
+        </span>
+        <ol class="oreder" style="width:460px">
+            <li>integer (int) ... 1 , 500 , -200</li>
+            <li>double (double) ... 0.5 , 3.14 , -2.5</li>
+            <li>string (string) ... "Hassan" , "What is your name ?"</li>
+            <li>character (char) ... 'A' , '+' , '5'</li>
+            <li>boolean (bool) ... true , false</li>
+        </ol>
+
+    </section>
+
+    <section class="home-section" id="variables">
+        <div class="main-title">
+            <h2 class="sub-title">Variables</h2>
+        </div>
+        <span class="txt">
+            Variables are containers for storing data values.
+        </span>
+        <span class="txt">
+            The syntax for declaring a variable and assigning a value to it is as following :
+        </span>
+        <pre class="codeing" style="height: 80px;">
+            <code>
+    data-type variable-name = value(data) ;
+            </code>
+        </pre>
+        <span class="txt">
+            For example :-
+        </span>
+        <pre class="codeing" style="height: 235px;">
+            <code>
+        int age = 20 ;
+        string FirstName = "Ahmed" ;
+        string full_name = "Ahmed Saber" ;
+        double _degree = 80.5 ;
+        char grade = 'A' ;
+        bool student = true ;
+        bool male = true ;
+            </code>
+        </pre>
+
+    </section>
+
+    <section class="home-section" id="type-casting">
+        <div class="main-title">
+            <h2 class="sub-title">Type Casting</h2>
+        </div>
+        <span class="txt">
+            Type casting means turning a certain data from a type to another one.
+        </span>
+        <span class="txt">
+            Syntax for type casting is :-
+        </span>
+        <pre class="codeing" style="height: 80px;">
+            <code>
+  (data-type) data
+            </code>
+        </pre>
+        <span class="txt">
+            For example :-
+        </span>
+        <pre class="codeing" style="height: 160px;">
+            <code>
+   double pi = 3.14 ;
+   int myInt = (int) pi ;
+   Console.WriteLine(pi) ; // 3.14
+   Console.WriteLine(myInt) ; // 3
+            </code>
+        </pre>
+
+    </section>
+
+    <section class="home-section" id="user-input">
+        <div class="main-title">
+            <h2 class="sub-title">User Input</h2>
+        </div>
+        <span class="txt">
+            You already know that Console.WriteLine() is used to output text.
+        </span>
+        <span class="txt">
+            Now you are going to learn how to use Console.ReadLine() to get user input.
+        </span>
+        <pre class="codeing" style="height: 80px;">
+            <code>
+   Console.ReadLine();
+            </code>
+        </pre>
+        <span class="txt">
+            For example :-
+        </span>
+        <pre class="codeing" style="height: 160px;">
+            <code>
+   int age ;
+   Console.Write("Enter your age:") ;
+   age = Console.ReadLine() ;
+   Console.WriteLine("You are " + age + " years old") ;
+            </code>
+        </pre>
+
+    </section>
+
+    <section class="home-section" id="booleans">
+        <div class="main-title">
+            <h2 class="sub-title">Booleans</h2>
+        </div>
+        <span class="txt">
+            Booleans are data types that can be used to control whether something is true or false(yes or no / on or off).
+        </span>
+        <pre class="codeing" style="height: 130px;">
+            <code>
+   bool male = true ;
+   bool student = true ;
+   bool permission_accepted = false ;
+            </code>
+        </pre>
+    </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
