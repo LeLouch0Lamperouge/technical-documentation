@@ -212,11 +212,13 @@ body {
 }
 
 .codeing {
-    margin: 0 30px;
-    background-color: #2A2B2A;
-    color: #EDE6E3;
-    width: fit-content;
-    padding-right: 10px;
+  margin: 0 30px;
+  background-color: #2A2B2A;
+  color: #EDE6E3;
+  width: fit-content;
+  padding-right: 10px;
+  max-width: calc(100% - 60px);
+  overflow: auto;
 }
 @media (max-width: 400px) {
   .sidebar.close .nav-links li .sub-menu{
