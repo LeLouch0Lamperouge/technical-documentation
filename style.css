@@ -210,7 +210,7 @@ body {
   color: #000;
   width: fit-content;
   max-width: calc(100% - 60px);
-  overflow: auto;
+  overflow-x: auto;
 }
 
 .codeing {
@@ -220,7 +220,7 @@ body {
   width: fit-content;
   padding-right: 10px;
   max-width: calc(100% - 60px);
-  overflow: auto;
+  overflow-x: auto;
 }
 @media (max-width: 400px) {
   .sidebar.close .nav-links li .sub-menu{
