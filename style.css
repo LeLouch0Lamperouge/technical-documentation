@@ -14,7 +14,7 @@ body {
   width: 160px;
   position: fixed;
   display: block;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: #1A936F;
@@ -22,7 +22,11 @@ body {
   transform: translateX(0px);
   transition-duration: 0.5s;
 }
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .sidebar a {
   padding: 20px;
   text-decoration: none;
@@ -133,6 +137,10 @@ section {
 @media screen and (max-width: 650px) {
   .home-section .home-content {
     display: flex;
+    background-color: #EDE6E3;
+    max-width: 96%;
+    z-index: 1;
+    box-shadow: 0 0 2px 2px #0002;
   }
   .transform {
     transform: translateX(-1000px);
