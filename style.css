@@ -23,9 +23,10 @@ body {
   transition-duration: 0.5s;
 }
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 2px 2px #0002;
 }
 .sidebar a {
   padding: 20px;
@@ -140,7 +141,6 @@ section {
     background-color: #EDE6E3;
     max-width: 96%;
     z-index: 1;
-    box-shadow: 0 0 2px 2px #0002;
   }
   .transform {
     transform: translateX(-1000px);
