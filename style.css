@@ -235,6 +235,9 @@ body {
   .sidebar.close .nav-links li .sub-menu{
     display: none;
   }
+  .atract {
+    display: none;
+  }
   .sidebar{
     width: 78px;
   }
