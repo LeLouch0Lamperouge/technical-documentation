@@ -8,6 +8,18 @@ document.addEventListener("click", function(event) {
       for (const sectors of boxes) {
         sectors.style.width = "calc(100% - 260px)";
       }
+      const flexo = document.querySelectorAll('.atract');
+      for (const atract of flexo) {
+        atract.style.display = "flex";
+      }
+      const mediaQuery = window.matchMedia('(max-width: 400px)')
+      if (mediaQuery.matches) {
+        const widthi = document.querySelectorAll('.sectors');
+        for (const sectors of widthi) {
+          sectors.style.width = "calc(100% - 78px)";
+        }
+      }
+
   }
 },
 false
@@ -21,6 +33,17 @@ document.addEventListener("click", function(event) {
     const boxes = document.querySelectorAll('.sectors');
     for (const sectors of boxes) {
       sectors.style.width = "calc(100% - 78px)";
+    }
+    const flexo = document.querySelectorAll('.atract');
+    for (const atract of flexo) {
+      atract.style.display = "none";
+    }
+    const mediaQuery = window.matchMedia('(max-width: 400px)')
+    if (mediaQuery.matches) {
+      const widthi = document.querySelectorAll('.sectors');
+      for (const sectors of widthi) {
+        sectors.style.width = "100%";
+      }
     }
   }
 },
