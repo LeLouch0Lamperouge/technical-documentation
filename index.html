@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Technical Documentation </title>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/268361e16f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
    </head>
 <body>
 
-    <div class="sidebar">
+    <div class="sidebar transform" id="sidebar">
         <span class="navtitles">C# Tutorial</span>
+        <i class="fa-solid fa-xmark" id="menuClose"></i>
         <a href="#introduction">Introduction</a>
         <a href="#syntax">Syntax</a>
         <a href="#data-types">Data Types</a>
@@ -22,6 +24,11 @@
     </div>
 
     <section class="home-section sectors first">
+        <div class="home-content">
+            <i class='bx bx-menu' id="menuOpen"></i>
+            <span class="text">C# Tutorial</span>
+        </div>
+      
         <div class="main-title" id="introduction">
             <h2 class="sub-title">Introduction</h2>
             <span class="txt">
@@ -186,5 +193,6 @@
         </pre>
     </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
