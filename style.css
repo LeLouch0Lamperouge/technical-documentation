@@ -13,11 +13,14 @@ body {
   height: 100%;
   width: 160px;
   position: fixed;
+  display: block;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #1A936F;
   overflow-x: hidden;
+  transform: translateX(0px);
+  transition-duration: 0.5s;
 }
 
 .sidebar a {
@@ -31,13 +34,21 @@ body {
   background-color: #2A2B2A;
 }
 .navtitles {
-  padding: 20px;
+  padding: 25px;
   text-decoration: none;
+  font-size: 20px;
   background-color: #2A2B2A;
   color: #EDE6E3;
   display: block;
 }
-
+i.fa-solid.fa-xmark {
+  padding: 26px 35px;
+  font-size: 25px;
+  color: rgb(237, 230, 227);
+  display: none;
+  float: right;
+  cursor: pointer;
+}
 section {
   margin-left: 160px;
   padding: 0px 10px;
@@ -73,7 +84,7 @@ section {
 }
 .home-section .home-content{
   height: 60px;
-  display: flex;
+  display: none;
   align-items: center;
 }
 .home-section .home-content .bx-menu,
@@ -120,3 +131,32 @@ section {
   overflow-x: auto;
 }
 
+@media screen and (max-width: 650px) {
+  .home-section .home-content {
+    display: flex;
+  }
+  .transform {
+    transform: translateX(-1000px);
+    transition-duration: 0.5s;
+    z-index: 1000;
+    width: 250px;
+  }
+  .navtitles {
+    display: inline-block;
+  }
+  .navtitles {
+    background-color: unset;
+  }
+  .sidebar {
+    width: 250px;
+  }
+  .sidebar a {
+    padding: 20px 40px;
+  }
+  i.fa-solid.fa-xmark {
+    display: inline-block;
+  }
+  section {
+    margin-left: unset;
+  }
+}
